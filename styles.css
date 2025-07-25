@@ -50,17 +50,42 @@ nav ul li a {
     text-decoration: none; 
 }
 
-.profile-picture {
-    display: flex;
-    justify-content: flex-start; 
-    margin-top: 5rem;
-    padding-left: 3rem; 
+.profile-container {
+    display: flex;                
+    margin-top: 5rem;        
+    padding-left: 4rem;       
   }
   
-.profile-picture img {
-    width: 600px;
-    height: 800px;
-    border-radius: 0;   
+  .profile-picture {
+    display: flex;
+    justify-content: flex-start; 
+    margin-right: 5rem;          
+  }
+  
+  .profile-picture img {
+    width: 600px;           
+    height: 800px;           
+    border-radius: 0;        
     border: 3px dashed #333; 
-}
+  }
+  
+  .profile-text {
+    max-width: 800px; 
+    padding-top: 3rem;          
+  }
+  
+  .profile-text h2 {
+    font-size: 4.4rem;            
+    margin-bottom: 1rem;        
+    font-family: "Palatino";
+  }
+  
+  .profile-text p {
+    font-size: 1.2rem;          
+    font-family: "Georgia", serif;
+    margin-left: 0;
+    padding: 0;
+    color: #555;                
+  }
+  
   
