@@ -5,10 +5,29 @@
   }
   
 nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
     width: 100%;
-    background-color: #f2ded6;
-    color: white;
-    padding: 2rem; 
+    background-color: #e1d0ca;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
+}
+
+nav .name,
+nav .pages {
+    display: flex;
+    align-items: center;
+}
+
+.pages ul li:not(:last-child)::after {
+    content: "|";
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: black; 
+    font-weight: normal;
   }
 
 nav ul {
@@ -16,14 +35,13 @@ nav ul {
     display: flex;    
     justify-content: space-around; 
     margin: 0;
-    padding: 0;
+    padding: 2;
   }
 
 nav ul li{
     color: rgb(0, 0, 0); 
     text-decoration: none; 
-    padding: 0.5em 1em;
-    font-size: 1.3rem; 
+    font-size: 1.2rem; 
     font-family: "Palatino"
 }
 
@@ -31,3 +49,18 @@ nav ul li a {
     color: inherit; 
     text-decoration: none; 
 }
+
+.profile-picture {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 5rem;
+    padding-left: 3rem; 
+  }
+  
+.profile-picture img {
+    width: 600px;
+    height: 800px;
+    border-radius: 0;   
+    border: 3px dashed #333; 
+}
+  
