@@ -1,51 +1,6 @@
-# Pixel Hero Portfolio
+# Portfolio Website
 
-A responsive, pixel-inspired personal portfolio with comic-book visual cues influenced by web-slinging heroes and midnight vigilantes. The website is built with plain HTML, CSS, and JavaScript, so it has no framework or build dependencies.
-
-## Features
-
-- Pixel-art hero section and character card
-- About-me details and quick stats
-- Skills and tools list
-- Featured and secondary project cards
-- Experience and education timeline
-- Résumé preview and download area
-- Contact and social links
-- Responsive mobile navigation
-- Reduced-motion accessibility support
-
-## Preview locally
-
-Clone the repository and open `index.html` in a browser, or run a small local server:
-
-```bash
-python3 -m http.server 8000
-```
-
-Then visit `http://localhost:8000`.
-
-## Customize the portfolio
-
-Most content lives in `home.html`. Search for placeholders such as:
-
-- `[YOUR NAME]`
-- `[YOUR ROLE]`
-- `[YOUR LOCATION]`
-- `[COMPANY NAME]`
-- `PROJECT TITLE`
-- `hello@example.com`
-
-Replace the placeholder project links, GitHub URL, LinkedIn URL, and email address with your own information.
-
-### Add a résumé
-
-1. Add your PDF to the repository, for example as `resume.pdf`.
-2. Find the résumé download link in `home.html`.
-3. Change its `href` from `#` to `resume.pdf` and add the `download` attribute.
-
-```html
-<a class="btn primary" href="resume.pdf" download>DOWNLOAD RESUME ↓</a>
-```
+A responsive, pixel-inspired personal portfolio that showcases who I am and my work experience.
 
 ## Project structure
 
