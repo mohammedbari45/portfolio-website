@@ -29,3 +29,9 @@ header{position:sticky;top:0;z-index:50;min-height:76px;padding:0 max(24px,calc(
 
 #about .tools{margin-top:72px;padding:30px;background:#fff;border:var(--line);box-shadow:var(--shadow)}#about .tools>p{margin-bottom:22px;color:var(--purple);font-size:17px;letter-spacing:.1em}#about .tools ul{gap:14px;margin:0}#about .tools li{padding:11px 16px;background:var(--paper);border:3px solid var(--ink);box-shadow:3px 3px 0 var(--coral);font-size:14px;line-height:1.2}
 @media(max-width:600px){#about .tools{padding:22px}#about .tools>p{font-size:15px}#about .tools li{padding:10px 13px;font-size:12px}}
+
+/* Clear visual boundaries between the light-background sections. */
+#about,#experience,#resume{position:relative;border-top:3px solid var(--ink)}
+#about:before,#experience:before,#resume:before{content:"";position:absolute;top:-9px;left:0;z-index:1;width:15px;height:15px;background:var(--coral);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--acid)}
+#about:after,#experience:after,#resume:after{content:"";position:absolute;top:-3px;right:calc((100vw - 100%)/-2);left:calc((100vw - 100%)/-2);border-top:3px solid var(--ink)}
+#about,#work,#experience,#resume,#contact{scroll-margin-top:100px}
