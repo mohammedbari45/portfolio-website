@@ -35,3 +35,11 @@ header{position:sticky;top:0;z-index:50;min-height:76px;padding:0 max(24px,calc(
 #about:before,#experience:before,#resume:before{content:"";position:absolute;top:-9px;left:0;z-index:1;width:15px;height:15px;background:var(--coral);border:3px solid var(--ink);box-shadow:4px 4px 0 var(--acid)}
 #about:after,#experience:after,#resume:after{content:"";position:absolute;top:-3px;right:calc((100vw - 100%)/-2);left:calc((100vw - 100%)/-2);border-top:3px solid var(--ink)}
 #about,#work,#experience,#resume,#contact{scroll-margin-top:100px}
+
+/* Alternating full-bleed bands make each page section unmistakable. */
+#about,#experience,#resume{clip-path:inset(0 -100vmax)}
+#about{background:#f2f5ff;box-shadow:0 0 0 100vmax #f2f5ff}
+#experience{background:var(--paper);box-shadow:0 0 0 100vmax var(--paper)}
+#resume{background:#e6ebf6;box-shadow:0 0 0 100vmax #e6ebf6}
+#about:after,#experience:after,#resume:after{top:-5px;border-top:6px solid var(--ink)}
+#about:before,#experience:before,#resume:before{top:-11px;width:17px;height:17px}
